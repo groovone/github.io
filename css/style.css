@@ -1,11 +1,153 @@
-body {
-	margin :0;
-	padding:0;
-	overflow-y:hidden;
+@font-face {
+    font-family: 'texta-light';
+    src: url('../fonts/texta_light-webfont.woff2') format('woff2'),
+         url('../fonts/texta_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-body img {
-	margin :0;
-	padding:0;
+@font-face {
+    font-family: 'texta-bold';
+    src: url('../fonts/texta_bold-webfont.woff2') format('woff2'),
+         url('../fonts/texta_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/bg.jpg) no-repeat;
+ 
+}
+
+img {
 	max-width:100%;
+	height:auto;
+}
+
+h1 strong{
+	font-weight:normal;
+	font-family:texta-bold;
+	font-size:36px;
+}
+
+h1 {
+    font-weight: normal;
+    font-family: texta-light;
+    color: #535353;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+h2 {
+	font-weight:normal;
+	font-family:texta-bold;
+	color:#535353;
+	font-size:32px;
+}
+
+.wrapper {
+	width:1170px;
+	margin:0 auto;
+}
+
+.wrapper1 {
+	display:none;
+}
+
+.left_cont{
+	width:50%;
+	overflow:hidden;
+	float:left;
+}
+.right_cont{
+	width:50%;
+	overflow:hidden;
+	float:left;
+}
+
+.left_cont img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -7px;
+}
+
+.logo_cont {
+	float:left;
+	overflow:hidden;
+	clear:both;
+	margin-top:130px;
+}
+
+.decription_sec {
+	clear:both;
+	overflow:hidden;
+}
+
+@media only screen and (max-width:1169px) {
+.wrapper {
+	width:100%;
+	margin:0 auto;
+	display:block;
+}
+}
+
+@media only screen and (max-width:1024px) {
+.logo_cont {
+	margin-top:90px;
+}
+}
+
+@media only screen and (max-width:768px) {
+.wrapper1 {
+	width:100%;
+	margin:0 auto;
+	display:block;
+}
+
+.wrapper {
+	display:none;
+}
+
+
+
+.right_cont,.left_cont{
+	width:100%;
+	overflow:hidden;
+	float:left;
+}
+
+.logo_cont{
+	margin-top:0;
+	width:100%;
+	text-align:center;
+}
+
+.logo_cont img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.decription_sec {
+	text-align:center;
+}
+	
+	
+}
+
+@media only screen and (max-width:480px) {
+	h1 {
+    font-size: 28px;
+    line-height: 36px;
+}
+h1 strong {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
 }
