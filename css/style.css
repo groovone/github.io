@@ -20,6 +20,7 @@ body {
     margin: 0;
     padding: 0;
     background: url(../images/bg.jpg) no-repeat;
+	font-family: 'texta-light';
  
 }
 
@@ -31,22 +32,28 @@ img {
 h1 strong{
 	font-weight:normal;
 	font-family:texta-bold;
-	font-size:36px;
 }
 
 h1 {
     font-weight: normal;
     font-family: texta-light;
     color: #535353;
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 10px;
 }
 
 h2 {
 	font-weight:normal;
 	font-family:texta-bold;
 	color:#535353;
-	font-size:32px;
+	font-size:24px;
+}
+h3 {
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .wrapper {
@@ -72,7 +79,7 @@ h2 {
 .left_cont img {
     max-width: 100%;
     height: auto;
-    margin-top: -7px;
+    margin-top: -11px;
 }
 
 .logo_cont {
@@ -86,6 +93,138 @@ h2 {
 	clear:both;
 	overflow:hidden;
 }
+
+.subscribe_sec {
+	clear:both;
+	overflow:hidden;
+}
+
+/*Scubscribe styles starts here*/
+
+
+::-webkit-input-placeholder {
+  color: #B7E1FF;
+}
+
+.cta {
+  font-weight: bold;
+  border-radius: 25px;
+  line-height: 50px;
+  height: 50px;
+  width: 170px;
+  text-align: center;
+  transition: width .2s ease-in-out;
+  cursor: pointer;
+  color: #FFF;
+  font-size:16px;
+  background:#0397FF;
+
+}
+.cta .hide {
+  display: none;
+}
+.cta form {
+  display: flex;
+}
+.cta span {
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  -webkit-animation: fadeIn .3s ease-in-out;
+          animation: fadeIn .3s ease-in-out;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.cta .input {
+  display: none;
+  opacity: 0;
+  flex: 3;
+  text-align: left;
+}
+.cta .input input {
+  border: 0;
+  width: 220px;
+  height: 45px;
+  margin: 0 0 0 25px;
+  outline: none;
+  color: #FFF;
+  background: #0397ff;
+}
+.cta .button {
+  display: none;
+  opacity: 0;
+  flex: 1;
+}
+.cta .button button {
+  outline: none;
+  float: right;
+  padding: 0 15px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 25px;
+  color: #0397ff;
+  border: 0;
+  margin: 5px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.cta .button button:disabled {
+    color: #186abd;
+    opacity: 0.6;
+}
+.cta.sent {
+    cursor: default;
+    background: #a5cc03;
+}
+.cta.active {
+  width: 350px;
+  text-align: left;
+  transition: width .2s ease-in-out;
+  cursor: default;
+}
+.cta.active span {
+  display: none;
+}
+.cta.active .input, .cta.active .button {
+  display: block;
+  -webkit-animation: fadeIn .3s ease-in-out;
+          animation: fadeIn .3s ease-in-out;
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/*Scubscribe styles ends here*/
+
 
 @media only screen and (max-width:1169px) {
 .wrapper {
@@ -111,6 +250,10 @@ h2 {
 .wrapper {
 	display:none;
 }
+.left_cont img {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
 
 
 
@@ -127,12 +270,23 @@ h2 {
 }
 
 .logo_cont img {
-    width: 200px;
+    max-width: 50%;
     margin-top: 20px;
 }
 
 .decription_sec {
 	text-align:center;
+}
+
+.centerMe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.cta {
+    margin-top: 70px;
 }
 	
 	
@@ -149,5 +303,21 @@ h1 strong {
 
 h2 {
     font-size: 24px;
+}
+.cta {
+    margin-top: 90px;
+}
+.cta.active {
+    width: 290px;
+}
+.cta .input input {
+    width: 160px;
+}
+	
+}
+
+@media only screen and (max-width:400px) {
+.cta {
+    margin-top: 70px;
 }
 }
