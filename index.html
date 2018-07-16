@@ -45,17 +45,7 @@
             <div class="subscribe_sec">
               <div class='centerMe'>
                 <h3>Join our mailing list and be the first to get notified.</h3>
-                <div class='cta'>
-                  <span>Subscribe Now</span>
-                  <form>
-                    <div class='input'>
-                      <input placeholder='E-mail'>
-                    </div>
-                    <div class='button'>
-                      <button disabled='disabled' type='submit'>Subscribe</button>
-                    </div>
-                  </form>
-                </div>
+                <a target="_blank" style="border-radius: 30px; padding: 10px 40px; font-size: 18px; font-weight: bold;" href="https://mongrov.us18.list-manage.com/subscribe/post?u=1494451b612e1f7cf518a51b6&amp;id=116c848ce9" class="btn btn-primary btn-lg">Subscribe</a>
               </div>
             </div>
           </div>
@@ -67,6 +57,7 @@
                   </div>
   
               </div>
+              
   
             </div>
 
@@ -94,28 +85,29 @@
 
     <script>
     
-$('.cta span').click(function(){
-    $('.cta:not(.sent)').addClass('active');
-    $('input').focus();
-});
+    $('.cta span').click(function(){
+        $('.cta:not(.sent)').addClass('active');
+        $('input').focus();
+    });
 
-var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-$('input').on('input', function(){
-    if(regex.test($(this).val())) {
-        $('button').removeAttr('disabled'); }
-    else {
-        $('button').attr('disabled', 'disabled'); }
-});
+    $('input').on('input', function(){
+        if(regex.test($(this).val())) {
+            $('button').removeAttr('disabled'); }
+        else {
+            $('button').attr('disabled', 'disabled'); }
+    });
 
-$('form').submit(function(x){
-    x.preventDefault();
-    if(regex.test($('input').val())) {
-        $('.cta span').text('Thank you!');
-        $('.cta').removeClass('active').addClass('sent');
-		
-    }
-});
+    $('form').submit(function(x){
+        x.preventDefault();
+        if(regex.test($('input').val())) {
+            $('.cta span').text('Thank you!');
+            $('.cta').removeClass('active').addClass('sent');
+        
+        }
+    });
     </script>
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"1494451b612e1f7cf518a51b6","lid":"116c848ce9"}) })</script>
   </body>
 </html>
