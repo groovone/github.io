@@ -9486,11 +9486,16 @@ img.zoom-img {
     transition: opacity 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease; }
 
 .gro-landing-cover {
-  background-image: url("../img/gro-landing.jpg");
+  background-image: url("../img/gro-landing.png");
   height: 80vh;
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain; }
+
+@media (max-width: 992px) {
+  .gro-landing-cover {
+    background-image: none;
+    background-color: #BCCEFF !important; } }
 
 .gro-logo {
   width: 130px; }
