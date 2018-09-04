@@ -9497,6 +9497,19 @@ img.zoom-img {
     background-image: none;
     background-color: #BCCEFF !important; } }
 
+.particle-style {
+  position: absolute;
+  background: linear-gradient(90deg, #0099ff 0%, #6610f2 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  opacity: 0.5; }
+
+.banner-content {
+  z-index: 20; }
+
 .gro-logo {
   width: 130px; }
 
