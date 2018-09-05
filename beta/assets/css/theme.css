@@ -9524,6 +9524,10 @@ img.zoom-img {
   .gro-footer .nav-link:hover {
     color: #0099FF; }
 
+.v-timeline .icon-rounded {
+  width: 2.5rem;
+  height: 2.5rem; }
+
 .v-timeline .liner-icon {
   z-index: 200; }
 
