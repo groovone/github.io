@@ -9511,7 +9511,7 @@ img.zoom-img {
   z-index: 20; }
 
 .gro-logo {
-  width: 130px; }
+  width: 150px; }
 
 .nav-link.h5 {
   font-size: 1rem; }
@@ -9523,6 +9523,36 @@ img.zoom-img {
   color: #fff; }
   .gro-footer .nav-link:hover {
     color: #0099FF; }
+
+.v-timeline .liner-icon {
+  z-index: 200; }
+
+.v-timeline .liner-btm {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  background: #e9ecef;
+  width: 4px;
+  z-index: 100; }
+
+.v-timeline .liner-top {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 50%;
+  background: #e9ecef;
+  width: 4px;
+  z-index: 100; }
+
+.v-timeline .liner-full {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #e9ecef;
+  width: 4px;
+  z-index: 100; }
 
 .gro-b-border {
   height: 1px;
