@@ -25,11 +25,12 @@
 
           <ul class="navbar-nav">
 
-            <li class="nav-item"><a class="nav-link h5" href="#overview">Overview</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="#platform">Platform</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="#advantages">Advantages</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="#roadmap">Roadmap</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="#team">Team</a></li>
+            <li class="nav-item"><a class="nav-link h5" id="btn-overview" href="#overview">Overview</a></li>
+            <li class="nav-item"><a class="nav-link h5" id="btn-platform" href="#platform">Platform</a></li>
+            <!-- <li class="nav-item"><a class="nav-link h5" href="#advantages">Advantages</a></li> -->
+            <li class="nav-item"><a class="nav-link h5" id="btn-roadmap" href="#roadmap">Roadmap</a></li>
+            <li class="nav-item"><a class="nav-link h5" id="btn-team" href="#team">Team</a></li>
+            <li class="nav-item"><a class="nav-link h5" target="_blank" href="https://medium.com/groov">Blog</a></li>
 
           </ul>
         </div>
@@ -67,35 +68,35 @@
         </div>
       </div>
     </section>
-    <section class="bg-gradient">
+    <section id="overview" class="bg-gradient">
       <div class="container">
         <div class="row justify-content-around">
-          <div class="col-lg-6 align-self-center mb-3 mb-lg-0">
+          <div class="col-lg-5 align-self-center mb-3 mb-lg-0">
             <div class="">
               <div class="o-hidden">
                 <div data-flickity="{ &quot;cellAlign&quot;: &quot;center&quot;, &quot;autoPlay&quot;: 5000, &quot;contain&quot;: true, &quot;imagesLoaded&quot;: true, &quot;wrapAround&quot;: true }" class="slider-highlight-selected">
-                  <div class="col-9">
+                  <div class="col-10">
                     <div class="row d-flex align-items-center">
                       <div class="col-12 px-md-3">
                         <img src="assets/img/iphone-mock-01.png" alt="Portfolio">
                       </div>
                     </div>
                   </div>
-                  <div class="col-9">
+                  <div class="col-10">
                     <div class="row d-flex align-items-center">
                       <div class="col-12 px-md-3">
                         <img src="assets/img/iphone-mock-02.png" alt="Portfolio">
                       </div>
                     </div>
                   </div>
-                  <div class="col-9">
+                  <div class="col-10">
                     <div class="row d-flex align-items-center">
                       <div class="col-12 px-md-3">
                         <img src="assets/img/iphone-mock-03.png" alt="Portfolio">
                       </div>
                     </div>
                   </div>
-                  <div class="col-9">
+                  <div class="col-10">
                     <div class="row d-flex align-items-center">
                       <div class="col-12 px-md-3">
                         <img src="assets/img/iphone-mock-04.png" alt="Portfolio">
@@ -106,13 +107,13 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-5 pt-3 d-flex flex-lg-column">
+          <div class="col-lg-4 pt-3 d-flex flex-lg-column">
             <div class="row">
 
               <div class="col-md-4 col-lg-12 d-md-flex">
-                <div class="text-center card">
-                  <div class="card-body py-2">
-                    <svg class="icon" width="58" height="58" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                <div class="card">
+                  <div class="card-body d-sm-flex py-4">
+                    <svg class="icon mr-sm-3 flex-shrink-0" width="58" height="58" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
                       <g id="communication" transform="matrix(7.76284,0,0,7.76284,6.84974,6.84586)">
                         <path d="M20.159,6.304L15.006,6.304L15.006,5.446C15.006,4.262 14.043,3.299 12.859,3.299L3.841,3.299C2.657,3.299 1.694,4.262 1.694,5.446L1.694,12.316C1.694,13.5 2.657,14.463 3.841,14.463L4.27,14.463L4.27,16.836C4.27,17.188 4.481,17.5 4.807,17.632C4.912,17.675 5.022,17.695 5.13,17.695C5.358,17.695 5.581,17.604 5.746,17.432L8.616,14.462L9.852,14.462L9.852,15.321C9.852,16.505 10.815,17.468 11.999,17.468L15.812,17.468L18.682,20.438C18.848,20.61 19.07,20.701 19.298,20.701C19.407,20.701 19.516,20.68 19.621,20.638C19.947,20.506 20.158,20.193 20.158,19.841L20.158,17.468C21.342,17.468 22.305,16.505 22.305,15.321L22.305,8.451C22.306,7.268 21.342,6.304 20.159,6.304ZM8.435,13.604C8.319,13.604 8.207,13.651 8.126,13.735L5.13,16.836L5.13,14.034C5.13,13.797 4.938,13.605 4.701,13.605L3.841,13.605C3.131,13.605 2.553,13.027 2.553,12.317L2.553,5.447C2.553,4.737 3.131,4.159 3.841,4.159L12.858,4.159C13.568,4.159 14.146,4.737 14.146,5.447L14.146,12.317C14.146,13.027 13.568,13.605 12.858,13.605L8.435,13.605L8.435,13.604ZM21.447,15.322C21.447,16.032 20.869,16.61 20.159,16.61L19.73,16.61C19.493,16.61 19.301,16.802 19.301,17.039L19.301,19.841L16.304,16.74C16.223,16.656 16.112,16.609 15.995,16.609L12,16.609C11.29,16.609 10.712,16.031 10.712,15.321L10.712,14.462L12.859,14.462C14.043,14.462 15.006,13.499 15.006,12.315L15.006,7.163L20.159,7.163C20.869,7.163 21.447,7.741 21.447,8.451L21.447,15.322Z" style="fill-rule:nonzero;" />
                         <path d="M13.288,6.304L12,6.304C10.816,6.304 9.853,7.267 9.853,8.451L9.853,12.745L10.712,12.745L10.712,8.451C10.712,7.741 11.29,7.163 12,7.163L13.288,7.163L13.288,6.304Z" style="fill-rule:nonzero;" />
@@ -120,7 +121,7 @@
                     </svg>
 
                     <div>
-                      <h4 class="mb-1 mt-2">Communication</h4>
+                      <h5 class="mb-1">Communication</h5>
                       <p>A unified communication platform for messaging & dApps.</p>
                     </div>
                   </div>
@@ -128,16 +129,16 @@
               </div>
 
               <div class="col-md-4 col-lg-12 d-md-flex">
-                <div class="text-center card">
-                  <div class="card-body py-2">
-                    <svg class="icon" width="58" height="58" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                <div class="card">
+                  <div class="card-body d-sm-flex py-4">
+                    <svg class="icon mr-sm-3 flex-shrink-0" width="58" height="58" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
                       <g id="discovery" transform="matrix(1.95054,0,0,1.95054,2.44512,2.44512)">
                         <path d="M15,9C11.711,9 9,11.711 9,15L9,41C9,44.289 11.711,47 15,47L41,47C44.289,47 47,44.289 47,41L47,15C47,11.711 44.289,9 41,9L15,9ZM59,9C55.711,9 53,11.711 53,15L53,41C53,44.289 55.711,47 59,47L85,47C88.289,47 91,44.289 91,41L91,15C91,11.711 88.289,9 85,9L59,9ZM15,13L41,13C42.143,13 43,13.857 43,15L43,41C43,42.143 42.143,43 41,43L15,43C13.857,43 13,42.143 13,41L13,15C13,13.857 13.857,13 15,13ZM59,13L85,13C86.143,13 87,13.857 87,15L87,41C87,42.143 86.143,43 85,43L59,43C57.857,43 57,42.143 57,41L57,15C57,13.857 57.857,13 59,13ZM71.781,52.969C70.756,53.081 69.978,53.969 70,55L70,70L55,70C54.938,69.997 54.875,69.997 54.813,70C53.75,70.05 52.904,70.937 52.904,72C52.904,73.098 53.807,74.002 54.906,74.002C54.937,74.002 54.969,74.001 55,74L70,74L70,89C70,89.009 70,89.019 70,89.028C70,90.126 70.903,91.028 72,91.028C73.097,91.028 74,90.126 74,89.028C74,89.019 74,89.009 74,89L74,74L89,74C89.009,74 89.019,74 89.028,74C90.126,74 91.028,73.097 91.028,72C91.028,70.903 90.126,70 89.028,70C89.019,70 89.009,70 89,70L74,70L74,55C74,54.986 74,54.971 74,54.957C74,53.86 73.098,52.957 72,52.957C71.927,52.957 71.854,52.961 71.781,52.969ZM15,53C11.711,53 9,55.711 9,59L9,85C9,88.289 11.711,91 15,91L41,91C44.289,91 47,88.289 47,85L47,59C47,55.711 44.289,53 41,53L15,53ZM15,57L41,57C42.143,57 43,57.857 43,59L43,85C43,86.143 42.143,87 41,87L15,87C13.857,87 13,86.143 13,85L13,59C13,57.857 13.857,57 15,57Z" style="fill-rule:nonzero;" />
                       </g>
                     </svg>
 
                     <div>
-                      <h4 class="mb-1 mt-2">Discovery</h4>
+                      <h5 class="mb-1">Discovery</h5>
                       <p>Groov simplifies the discovery of dApps using its app manager.</p>
                     </div>
                   </div>
@@ -145,9 +146,9 @@
               </div>
 
               <div class="col-md-4 col-lg-12 d-md-flex">
-                <div class="text-center card">
-                  <div class="card-body pt-2">
-                    <svg class="icon" width="65" height="65" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                <div class="card">
+                  <div class="card-body d-sm-flex py-4">
+                    <svg class="icon mr-sm-3 flex-shrink-0" width="65" height="65" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
                       <g id="appmanage" transform="matrix(2.53125,0,0,2.53125,-26.5625,-26.5625)">
                         <path d="M38,82L62,82C65.3,82 68,79.3 68,76L68,24C68,20.7 65.3,18 62,18L38,18C34.7,18 32,20.7 32,24L32,76C32,79.3 34.7,82 38,82ZM34,24C34,21.8 35.8,20 38,20L62,20C64.2,20 66,21.8 66,24L66,26L34,26L34,24ZM34,28L66,28L66,72L34,72L34,28ZM34,74L66,74L66,76C66,78.2 64.2,80 62,80L38,80C35.8,80 34,78.2 34,76L34,74Z" style="fill-rule:nonzero;" />
                         <path d="M46,78L54,78C54.6,78 55,77.6 55,77C55,76.4 54.6,76 54,76L46,76C45.4,76 45,76.4 45,77C45,77.6 45.4,78 46,78Z" style="fill-rule:nonzero;" />
@@ -179,7 +180,7 @@
                     </svg>
 
                     <div>
-                      <h4 class="mb-1 mt-2">Experience</h4>
+                      <h5 class="mb-1">Experience</h5>
                       <p>Improve user experience of dApps with assistance of AI & bots.</p>
                     </div>
                   </div>
@@ -192,7 +193,7 @@
       </div>
     </section>
 
-    <section id="solution" class="bg-white">
+    <section id="platform" class="bg-white">
       <div class="container">
         <div class="row justify-content-center text-center mb-4">
           <div class="col-lg-8">
@@ -284,7 +285,7 @@
                     </div>
                   </div>
                 </div>
-                <div id="pl-02" class="pl-cards d-none card p-lg-4 p-3 mb-lg-0">
+                <div id="pl-02" class="pl-cards d-none card bg-light p-lg-4 p-3 mb-lg-0">
                   <div class="card-body py-3 flex-grow-0x">
                     <div class="row d-flex align-items-center">
                       <div class="col-md-5">
@@ -298,7 +299,7 @@
                     </div>
                   </div>
                 </div>
-                <div id="pl-03" class="pl-cards d-none card p-lg-4 p-3 mb-lg-0">
+                <div id="pl-03" class="pl-cards d-none card bg-light p-lg-4 p-3 mb-lg-0">
                   <div class="card-body py-3 flex-grow-0x">
                     <div class="row d-flex align-items-center">
                       <div class="col-md-5">
@@ -312,7 +313,7 @@
                     </div>
                   </div>
                 </div>
-                <div id="pl-04" class="pl-cards d-none card p-lg-4 p-3 mb-lg-0">
+                <div id="pl-04" class="pl-cards d-none card bg-light p-lg-4 p-3 mb-lg-0">
                   <div class="card-body py-3 flex-grow-0x">
                     <div class="row d-flex align-items-center">
                       <div class="col-md-5">
@@ -347,16 +348,15 @@
               <div class="col-md-6 col-lg-12 d-md-flex">
                 <div class="card">
                   <div class="card-body d-sm-flex py-4">
-                    <svg class="icon mr-sm-3 flex-shrink-0" width="58" height="58" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-                      <g id="communication" transform="matrix(7.76284,0,0,7.76284,6.84974,6.84586)">
-                        <path d="M20.159,6.304L15.006,6.304L15.006,5.446C15.006,4.262 14.043,3.299 12.859,3.299L3.841,3.299C2.657,3.299 1.694,4.262 1.694,5.446L1.694,12.316C1.694,13.5 2.657,14.463 3.841,14.463L4.27,14.463L4.27,16.836C4.27,17.188 4.481,17.5 4.807,17.632C4.912,17.675 5.022,17.695 5.13,17.695C5.358,17.695 5.581,17.604 5.746,17.432L8.616,14.462L9.852,14.462L9.852,15.321C9.852,16.505 10.815,17.468 11.999,17.468L15.812,17.468L18.682,20.438C18.848,20.61 19.07,20.701 19.298,20.701C19.407,20.701 19.516,20.68 19.621,20.638C19.947,20.506 20.158,20.193 20.158,19.841L20.158,17.468C21.342,17.468 22.305,16.505 22.305,15.321L22.305,8.451C22.306,7.268 21.342,6.304 20.159,6.304ZM8.435,13.604C8.319,13.604 8.207,13.651 8.126,13.735L5.13,16.836L5.13,14.034C5.13,13.797 4.938,13.605 4.701,13.605L3.841,13.605C3.131,13.605 2.553,13.027 2.553,12.317L2.553,5.447C2.553,4.737 3.131,4.159 3.841,4.159L12.858,4.159C13.568,4.159 14.146,4.737 14.146,5.447L14.146,12.317C14.146,13.027 13.568,13.605 12.858,13.605L8.435,13.605L8.435,13.604ZM21.447,15.322C21.447,16.032 20.869,16.61 20.159,16.61L19.73,16.61C19.493,16.61 19.301,16.802 19.301,17.039L19.301,19.841L16.304,16.74C16.223,16.656 16.112,16.609 15.995,16.609L12,16.609C11.29,16.609 10.712,16.031 10.712,15.321L10.712,14.462L12.859,14.462C14.043,14.462 15.006,13.499 15.006,12.315L15.006,7.163L20.159,7.163C20.869,7.163 21.447,7.741 21.447,8.451L21.447,15.322Z" style="fill-rule:nonzero;" />
-                        <path d="M13.288,6.304L12,6.304C10.816,6.304 9.853,7.267 9.853,8.451L9.853,12.745L10.712,12.745L10.712,8.451C10.712,7.741 11.29,7.163 12,7.163L13.288,7.163L13.288,6.304Z" style="fill-rule:nonzero;" />
+                    <svg class="icon mr-sm-3 flex-shrink-0" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                      <g transform="matrix(391.446,0,0,391.446,20.0742,19.9805)">
+                        <path d="M0.099,0.179L0.229,0.31L0.358,0.18C0.375,0.164 0.383,0.14 0.386,0.116C0.39,0.083 0.385,0.049 0.378,0.03C0.36,0.024 0.326,0.019 0.292,0.023C0.268,0.026 0.244,0.034 0.228,0.05L0.099,0.179L0.099,0.179ZM0.08,0.191L0.008,0.172C0.002,0.17 -0.001,0.164 0,0.159C0.001,0.157 0.002,0.155 0.003,0.154L0.073,0.084C0.075,0.082 0.078,0.081 0.081,0.081L0.166,0.082L0.213,0.035C0.233,0.015 0.261,0.005 0.29,0.002C0.33,-0.003 0.371,0.004 0.39,0.012C0.393,0.013 0.395,0.015 0.396,0.018C0.404,0.037 0.412,0.079 0.407,0.119C0.403,0.147 0.394,0.175 0.374,0.195L0.327,0.242L0.327,0.327C0.327,0.33 0.326,0.333 0.324,0.336L0.254,0.405C0.253,0.407 0.252,0.408 0.25,0.408C0.244,0.41 0.238,0.406 0.237,0.4L0.217,0.329L0.218,0.329L0.08,0.191L0.08,0.191ZM0.145,0.103L0.085,0.103L0.031,0.156L0.079,0.169L0.145,0.103ZM0.24,0.329L0.252,0.377L0.306,0.324L0.306,0.263L0.24,0.329L0.24,0.329ZM0.155,0.329C0.159,0.325 0.166,0.325 0.17,0.329C0.174,0.333 0.174,0.34 0.17,0.344L0.116,0.399C0.111,0.403 0.105,0.403 0.1,0.399C0.096,0.395 0.096,0.388 0.1,0.384L0.155,0.329L0.155,0.329ZM0.109,0.284C0.114,0.28 0.12,0.28 0.125,0.284C0.129,0.288 0.129,0.295 0.125,0.299L0.043,0.381C0.039,0.385 0.032,0.385 0.028,0.381C0.024,0.376 0.024,0.37 0.028,0.365L0.109,0.284ZM0.064,0.238C0.068,0.234 0.075,0.234 0.079,0.238C0.083,0.243 0.083,0.249 0.079,0.254L0.025,0.308C0.021,0.312 0.014,0.312 0.01,0.308C0.006,0.304 0.006,0.297 0.01,0.293L0.064,0.238ZM0.292,0.116C0.302,0.126 0.307,0.138 0.307,0.151C0.307,0.164 0.302,0.176 0.292,0.186C0.283,0.195 0.27,0.2 0.257,0.2C0.245,0.2 0.232,0.195 0.223,0.186C0.213,0.176 0.208,0.164 0.208,0.151C0.208,0.138 0.213,0.126 0.223,0.116C0.232,0.107 0.245,0.102 0.257,0.102C0.27,0.102 0.283,0.107 0.292,0.116ZM0.285,0.151C0.285,0.144 0.282,0.137 0.277,0.131C0.272,0.126 0.264,0.123 0.257,0.123C0.25,0.123 0.243,0.126 0.238,0.131C0.232,0.137 0.23,0.144 0.23,0.151C0.23,0.158 0.232,0.165 0.238,0.171C0.243,0.176 0.25,0.179 0.257,0.179C0.264,0.179 0.272,0.176 0.277,0.171C0.282,0.165 0.285,0.158 0.285,0.151Z" style="fill-rule:nonzero;" />
                       </g>
                     </svg>
 
                     <div>
-                      <h5 class="mb-1">Rich user experience</h5>
-                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti.</p>
+                      <h5 class="mb-1">Build apps in no time</h5>
+                      <p>Pick code modules from our library to easily build complex workflows.</p>
                     </div>
                   </div>
                 </div>
@@ -366,14 +366,14 @@
                 <div class="card">
                   <div class="card-body d-sm-flex py-4">
                     <svg class="icon mr-sm-3 flex-shrink-0" width="58" height="58" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-                      <g id="discovery" transform="matrix(1.95054,0,0,1.95054,2.44512,2.44512)">
-                        <path d="M15,9C11.711,9 9,11.711 9,15L9,41C9,44.289 11.711,47 15,47L41,47C44.289,47 47,44.289 47,41L47,15C47,11.711 44.289,9 41,9L15,9ZM59,9C55.711,9 53,11.711 53,15L53,41C53,44.289 55.711,47 59,47L85,47C88.289,47 91,44.289 91,41L91,15C91,11.711 88.289,9 85,9L59,9ZM15,13L41,13C42.143,13 43,13.857 43,15L43,41C43,42.143 42.143,43 41,43L15,43C13.857,43 13,42.143 13,41L13,15C13,13.857 13.857,13 15,13ZM59,13L85,13C86.143,13 87,13.857 87,15L87,41C87,42.143 86.143,43 85,43L59,43C57.857,43 57,42.143 57,41L57,15C57,13.857 57.857,13 59,13ZM71.781,52.969C70.756,53.081 69.978,53.969 70,55L70,70L55,70C54.938,69.997 54.875,69.997 54.813,70C53.75,70.05 52.904,70.937 52.904,72C52.904,73.098 53.807,74.002 54.906,74.002C54.937,74.002 54.969,74.001 55,74L70,74L70,89C70,89.009 70,89.019 70,89.028C70,90.126 70.903,91.028 72,91.028C73.097,91.028 74,90.126 74,89.028C74,89.019 74,89.009 74,89L74,74L89,74C89.009,74 89.019,74 89.028,74C90.126,74 91.028,73.097 91.028,72C91.028,70.903 90.126,70 89.028,70C89.019,70 89.009,70 89,70L74,70L74,55C74,54.986 74,54.971 74,54.957C74,53.86 73.098,52.957 72,52.957C71.927,52.957 71.854,52.961 71.781,52.969ZM15,53C11.711,53 9,55.711 9,59L9,85C9,88.289 11.711,91 15,91L41,91C44.289,91 47,88.289 47,85L47,59C47,55.711 44.289,53 41,53L15,53ZM15,57L41,57C42.143,57 43,57.857 43,59L43,85C43,86.143 42.143,87 41,87L15,87C13.857,87 13,86.143 13,85L13,59C13,57.857 13.857,57 15,57Z" style="fill-rule:nonzero;" />
+                      <g transform="matrix(2.5,0,0,2.5,20,20)">
+                        <path d="M46,3L18,3C15.794,3 14,4.794 14,7L16,7C16,5.897 16.897,5 18,5L46,5C47.103,5 48,5.897 48,7L48,13L20,13L20,9L2,9L2,27L20,27L20,15L48,15L48,49L25,49L25,45L2,45L2,55L25,55L25,51L48,51L48,57C48,58.103 47.103,59 46,59L18,59C16.897,59 16,58.103 16,57L14,57C14,59.206 15.794,61 18,61L46,61C48.206,61 50,59.206 50,57L50,29L50,27L50,21L50,19L50,7C50,4.794 48.206,3 46,3ZM18,25L4,25L4,11L18,11L18,25ZM23,53L4,53L4,47L23,47L23,53ZM35,54L35,56L29,56L29,54L35,54ZM37,8L37,10L31,10L31,8L37,8ZM29,8L29,10L27,10L27,8L29,8ZM16,29L16,43L14,43L14,29L16,29ZM32,33C33.654,33 35,31.654 35,30C35,28.346 33.654,27 32,27C30.346,27 29,28.346 29,30C29,31.654 30.346,33 32,33ZM32,29C32.552,29 33,29.449 33,30C33,30.551 32.552,31 32,31C31.449,31 31,30.551 31,30C31,29.449 31.449,29 32,29ZM42,32C42,26.486 37.514,22 32,22C26.486,22 22,26.486 22,32C22,37.514 26.486,42 32,42C37.514,42 42,37.514 42,32ZM28.141,39.003C28.584,37.257 30.143,36 32,36C33.856,36 35.416,37.257 35.859,39.003C34.715,39.637 33.399,40 32,40C30.601,40 29.286,39.637 28.141,39.003ZM24,32C24,27.589 27.589,24 32,24C36.411,24 40,27.589 40,32C40,34.261 39.053,36.302 37.539,37.759C36.649,35.539 34.511,34 32,34C29.489,34 27.351,35.539 26.461,37.759C24.947,36.302 24,34.262 24,32ZM60,27L62,27L62,29L60,29L60,27ZM54,29L52,29L52,27L54,27L54,29ZM56,27L58,27L58,29L56,29L56,27ZM44,27L46,27L46,29L44,29L44,27ZM44,23L46,23L46,25L44,25L44,23ZM46,21L44,21L44,19L46,19L46,21ZM54,21L52,21L52,19L54,19L54,21ZM58,21L56,21L56,19L58,19L58,21ZM62,21L60,21L60,19L62,19L62,21ZM62,25L60,25L60,23L62,23L62,25ZM16,19L6,19L6,17L16,17L16,19ZM11,23L6,23L6,21L11,21L11,23ZM16,15L6,15L6,13L16,13L16,15ZM8,41L10,41L10,43L8,43L8,41ZM4,41L6,41L6,43L4,43L4,41ZM2,43L0,43L0,41L2,41L2,43ZM2,39L0,39L0,37L2,37L2,39ZM2,35L0,35L0,33L2,33L2,35ZM6,35L4,35L4,33L6,33L6,35ZM10,35L8,35L8,33L10,33L10,35ZM8,37L10,37L10,39L8,39L8,37ZM19,51L8,51L8,49L19,49L19,51ZM58,12L52,12L52,10L58,10L58,12ZM62,8L52,8L52,6L62,6L62,8ZM52,39L52,51L64,51L64,39L52,39ZM62,49L54,49L54,41L62,41L62,49ZM59,46L57,46L57,44L59,44L59,46Z" style="fill-rule:nonzero;" />
                       </g>
                     </svg>
 
                     <div>
-                      <h5 class="mb-1">Build apps in no time</h5>
-                      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+                      <h5 class="mb-1">Rich user experience</h5>
+                      <p>Inspire users with a AI-bot backed conversational interface.</p>
                     </div>
                   </div>
                 </div>
@@ -440,8 +440,15 @@
             <div class="card">
               <img class="card-img-top" src="assets/img/portrait-female-2.jpg" alt="Lucille Hobson">
               <div class="card-body py-3">
-                <h5 class="mb-0">Lucille Hobson</h5>
-                <span>Marketing</span>
+                <div class="row d-flex align-items-center">
+                  <div class="col-10">
+                    <h5 class="mb-0">Lucille Hobson</h5>
+                    <span>Marketing</span>
+                  </div>
+                  <div class="col-2">
+                    <a href="#"><i class="socicon-linkedin"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -449,8 +456,15 @@
             <div class="card">
               <img class="card-img-top" src="assets/img/portrait-male-3.jpg" alt="Frank Jacobs">
               <div class="card-body py-3">
-                <h5 class="mb-0">Frank Jacobs</h5>
-                <span>Finance</span>
+                <div class="row d-flex align-items-center">
+                  <div class="col-10">
+                    <h5 class="mb-0">Lucille Hobson</h5>
+                    <span>Marketing</span>
+                  </div>
+                  <div class="col-2">
+                    <a href="#"><i class="socicon-linkedin"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -458,8 +472,15 @@
             <div class="card">
               <img class="card-img-top" src="assets/img/portrait-female-3.jpg" alt="Elizabeth Callahan">
               <div class="card-body py-3">
-                <h5 class="mb-0">Elizabeth Callahan</h5>
-                <span>Customer Service</span>
+                <div class="row d-flex align-items-center">
+                  <div class="col-10">
+                    <h5 class="mb-0">Lucille Hobson</h5>
+                    <span>Marketing</span>
+                  </div>
+                  <div class="col-2">
+                    <a href="#"><i class="socicon-linkedin"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -467,8 +488,15 @@
             <div class="card">
               <img class="card-img-top" src="assets/img/portrait-female-4.jpg" alt="Robin Finch">
               <div class="card-body py-3">
-                <h5 class="mb-0">Robin Finch</h5>
-                <span>Customer Service</span>
+                <div class="row d-flex align-items-center">
+                  <div class="col-10">
+                    <h5 class="mb-0">Lucille Hobson</h5>
+                    <span>Marketing</span>
+                  </div>
+                  <div class="col-2">
+                    <a href="#"><i class="socicon-linkedin"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -483,8 +511,15 @@
             <div class="card">
               <img class="card-img-top" src="assets/img/portrait-male-3.jpg" alt="Frank Jacobs">
               <div class="card-body py-3">
-                <h5 class="mb-0">Frank Jacobs</h5>
-                <span>Finance</span>
+                <div class="row d-flex align-items-center">
+                  <div class="col-10">
+                    <h5 class="mb-0">Lucille Hobson</h5>
+                    <span>Marketing</span>
+                  </div>
+                  <div class="col-2">
+                    <a href="#"><i class="socicon-linkedin"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -492,8 +527,15 @@
             <div class="card">
               <img class="card-img-top" src="assets/img/portrait-female-3.jpg" alt="Elizabeth Callahan">
               <div class="card-body py-3">
-                <h5 class="mb-0">Elizabeth Callahan</h5>
-                <span>Customer Service</span>
+                <div class="row d-flex align-items-center">
+                  <div class="col-10">
+                    <h5 class="mb-0">Lucille Hobson</h5>
+                    <span>Marketing</span>
+                  </div>
+                  <div class="col-2">
+                    <a href="#"><i class="socicon-linkedin"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -501,8 +543,15 @@
             <div class="card">
               <img class="card-img-top" src="assets/img/portrait-female-4.jpg" alt="Robin Finch">
               <div class="card-body py-3">
-                <h5 class="mb-0">Robin Finch</h5>
-                <span>Customer Service</span>
+                <div class="row d-flex align-items-center">
+                  <div class="col-10">
+                    <h5 class="mb-0">Lucille Hobson</h5>
+                    <span>Marketing</span>
+                  </div>
+                  <div class="col-2">
+                    <a href="#"><i class="socicon-linkedin"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -533,14 +582,14 @@
                 <a href="#">
                   <h5>Problems of the traditional Apps and the App ecosytem</h5>
                 </a>
-                <div class="mb-4">
-                  <p>Ever since the world is getting confined to 4-inch devices, millions of applications have invaded the mobile market for simplifying our lives and uniting us globally.</p>
+                <div>
+                  <p class="mb-0">Ever since the world is getting confined to 4-inch devices, millions of applications have invaded the mobile market for simplifying our lives and uniting us globally.</p>
                 </div>
               </div>
               <div class="card-footer">
                 <div class="d-flex align-items-center">
                   <img src="assets/img/avatar-male-1.jpg" alt="Robert Simmons" class="avatar mr-2">
-                  <span>Robert Simmons</span>
+                  <span>Vivek Sai</span>
                 </div>
               </div>
             </div>
@@ -554,14 +603,14 @@
                 <a href="#">
                   <h5>Anatomy of an app over time</h5>
                 </a>
-                <div class="mb-4">
-                  <p>Quick jot down on history of apps to paint a picture of where things are heading to.</p>
+                <div>
+                  <p class="mb-0">Quick jot down on history of apps to paint a picture of where things are heading to.</p>
                 </div>
               </div>
               <div class="card-footer">
                 <div class="d-flex align-items-center">
                   <img src="assets/img/avatar-female-2.jpg" alt="Joanne Halsey" class="avatar mr-2">
-                  <span>Joanne Halsey</span>
+                  <span>Eyal Arasu</span>
                 </div>
               </div>
             </div>
@@ -575,14 +624,14 @@
                 <a href="#">
                   <h5>Is blockchain internet V2 ?</h5>
                 </a>
-                <div class="mb-4">
-                  <p>While the hype continues, wanted to pen down my thoughts on blockchain and why it may as well turn out to be one of the key inventions — especially to decentralize marketplaces.</p>
+                <div>
+                  <p class="mb-0">While the hype continues, wanted to pen down my thoughts on blockchain and why it may as well turn out to be one of the key inventions — especially to decentralize marketplaces.</p>
                 </div>
               </div>
               <div class="card-footer">
                 <div class="d-flex align-items-center">
                   <img src="assets/img/avatar-female-3.jpg" alt="Marianne Blake" class="avatar mr-2">
-                  <span>Marianne Blake</span>
+                  <span>Eyal Arasu</span>
                 </div>
               </div>
             </div>
@@ -595,7 +644,7 @@
           </div>
           <div class="col-md-8">
             <div class="row justify-content-center">
-              <div class="col-xl-9 col-lg-12">
+              <div class="col-xl-10 col-lg-12">
                 <span class="d-block text-white h5">Never miss an update</span>
                 <form class="row align-items-center mb-2">
 
@@ -910,6 +959,38 @@
         $("#pl-01").addClass("d-none");
         $("#pl-02").addClass("d-none");
         $("#pl-03").addClass("d-none");
+      });
+      $("#btn-overview").click(function(e)
+      {
+        e.preventDefault();
+        $('html, body').animate(
+        {
+          scrollTop: $('#overview').offset().top - 50
+        }, 100);
+      });
+      $("#btn-platform").click(function(e)
+      {
+        e.preventDefault();
+        $('html, body').animate(
+        {
+          scrollTop: $('#platform').offset().top - 50
+        }, 100);
+      });
+      $("#btn-roadmap").click(function(e)
+      {
+        e.preventDefault();
+        $('html, body').animate(
+        {
+          scrollTop: $('#roadmap').offset().top - 50
+        }, 100);
+      });
+      $("#btn-team").click(function(e)
+      {
+        e.preventDefault();
+        $('html, body').animate(
+        {
+          scrollTop: $('#team').offset().top - 50
+        }, 100);
       });
     </script>
 
